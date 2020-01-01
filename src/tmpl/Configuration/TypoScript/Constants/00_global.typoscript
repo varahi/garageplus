@@ -10,6 +10,13 @@ config {
     sys_language_uid = 0
     locale_all = ru_RU
 
+    header {
+        logoTitle = Технический Центр GaragePlus
+        slogan = <span>Технический центр</span><br />Независимый специалист
+    }
+    navigation {
+        rootPid = 1
+    }
     page {
         siteTitle =
         copyright =

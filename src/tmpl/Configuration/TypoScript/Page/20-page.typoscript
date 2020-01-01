@@ -43,10 +43,10 @@ page {
                     key.override.field = backend_layout
 
                     pagets__1 = TEXT
-                    pagets__1.value = Default
+                    pagets__1.value = Home
 
                     pagets__2 = TEXT
-                    pagets__2.value = Home
+                    pagets__2.value = Default
 
                     default = TEXT
                     default.value =
