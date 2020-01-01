@@ -1,0 +1,22 @@
+/*
+lib.footerForm = RECORDS
+lib.footerForm {
+    source = 10654
+    tables = tt_content
+    dontChekPid = 1
+}
+*/
+
+lib.footerConsultation = RECORDS
+lib.footerConsultation {
+    source = 11021, 11022
+    tables = tt_content
+    dontChekPid = 1
+}
+
+lib.modalForm = RECORDS
+lib.modalForm {
+    source = 10654
+    tables = tt_content
+    dontChekPid = 1
+}

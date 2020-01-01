@@ -1,0 +1,88 @@
+mod.web_layout.BackendLayouts {
+
+    1 {
+        title = Home Page
+        icon = tmpl-backend-layout
+        config {
+            backend_layout {
+                colCount = 1
+                rowCount = 6
+
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Slider
+                                colPos = 1
+                            }
+                        }
+                    }
+                    2 {
+                        columns {
+                            1 {
+                                name = Content
+                                colPos = 0
+                                allowed = *
+                            }
+                        }
+                    }
+                    3 {
+                        columns {
+                            1 {
+                                name = Parallax
+                                colPos = 2
+                                allowed = *
+                            }
+                        }
+                    }
+                    4 {
+                        columns {
+                            1 {
+                                name = Teaser
+                                colPos = 3
+                            }
+                        }
+                    }
+                    5 {
+                        columns {
+                            1 {
+                                name = Above footer
+                                colPos = 4
+                            }
+                        }
+                    }
+                    6 {
+                        columns {
+                            1 {
+                                name = Footer
+                                colPos = 5
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    2 {
+        title = Default Page
+        icon = tmpl-backend-layout
+        config {
+            backend_layout {
+                colCount = 1
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Content
+                                colPos = 0
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

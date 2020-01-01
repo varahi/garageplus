@@ -1,0 +1,19 @@
+# Image Teaser on top
+lib.parallaxImage = COA
+lib.parallaxImage {
+    wrap = |
+    10 = IMG_RESOURCE
+    10 {
+        file {
+            treatIdAsReference = 1
+            import.data = levelmedia: -1,slide
+            import.listNum = 0
+            import.override.field = media
+            width = 1920c
+            format = jpg
+            quality = 100
+        }
+        altText.data = page:title
+        #params = class="bw"
+    }
+}

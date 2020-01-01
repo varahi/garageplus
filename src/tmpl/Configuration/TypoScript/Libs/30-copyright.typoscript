@@ -1,0 +1,2 @@
+lib.copyright = TEXT
+lib.copyright.value = {$config.footer.copyright}

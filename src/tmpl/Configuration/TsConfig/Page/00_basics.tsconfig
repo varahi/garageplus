@@ -1,0 +1,29 @@
+# label and flag for default language
+mod.SHARED {
+    defaultLanguageLabel = Russian
+    defaultLanguageFlag = ru
+    colPos_list = 0,1,2,3,4,5
+}
+
+# Add headers
+TCEFORM.tt_content.header_layout {
+    altLabels {
+        1 = h1
+        2 = h2
+        3 = h3
+        4 = h4
+        5 = h5
+    }
+    addItems {
+        # H2 Headers
+        10 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h2_left
+        11 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h2_center
+        12 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h2_right
+        15 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h2_left_white
+        # H3 headers
+        20 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h3_left
+        21 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h3_center
+        22 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h3_right
+        30 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.default_inner_header
+    }
+}

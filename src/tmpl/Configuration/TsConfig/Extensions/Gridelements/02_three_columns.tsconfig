@@ -1,0 +1,36 @@
+# Page TSConfig:
+tx_gridelements.overruleRecords = 1
+tx_gridelements.setup {
+    # ID of Element
+    Grid_3Cols {
+        title = Grid element - 3 columns
+        description = Three Columns with configurations
+        flexformDS = FILE:EXT:tmpl/Configuration/FlexForms/02_three_columns.xml
+        icon = EXT:tmpl/Resources/Public/Icons/icon.gif
+        topLevelLayout = 1
+        config {
+            colCount = 3
+            rowCount = 1
+            rows {
+
+                1 {
+                    columns {
+                        1 {
+                            name = Left Column
+                            colPos = 0
+                        }
+                        2 {
+                            name = Center Column
+                            colPos = 1
+                        }
+                        3 {
+                            name = Right Column
+                            colPos = 2
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

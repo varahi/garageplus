@@ -1,0 +1,38 @@
+config.index_enable = 1
+config.index_externals = 1
+config.index_metatags = 1
+
+plugin.tx_indexedsearch {
+    show {
+        rules=0
+    }
+    settings {
+        displayRules = 0
+        displayAdvancedSearchLink = 0
+        displayLevel1Sections = 0
+        targetPid = 1328
+        exactCount = 1
+    }
+    view {
+        partialRootPaths {
+            0 = EXT:indexed_search/Resources/Private/Partials/
+            10 = {$plugin.tx_indexedsearch.view.partialRootPath}
+            20 = EXT:tmpl/Resources/Private/Extensions/indexed_search/Partials/
+        }
+    }
+}
+
+//[PIDinRootline = 35]
+[getTSFE().id == 1328]
+    lib.searchField >
+    lib.searchField = TEXT
+    lib.searchField.value =
+
+    plugin.tx_indexedsearch {
+        settings {
+            displayRules = 0
+            displayAdvancedSearchLink = 0
+            displayLevel1Sections = 0
+        }
+    }
+[global]

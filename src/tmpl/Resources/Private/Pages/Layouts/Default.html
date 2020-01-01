@@ -1,18 +1,8 @@
 
-<header class="top">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2 hidden-xs hidden-sm">
-                <f:cObject typoscriptObjectPath="lib.logo" />
-            </div>
-        </div>
-    </div>
-</header>
+<f:render partial="Header" arguments="{_all}" />
+<f:render partial="Navigation" arguments="{_all}" />
 
-<div class="container">
-    <f:render section="content" />
-</div>
+<f:render section="content" />
 
-<footer>
-
-</footer>
+<f:render partial="Footer" arguments="{_all}" />
+<f:render partial="Modal" arguments="{_all}" />

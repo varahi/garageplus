@@ -1,0 +1,21 @@
+lib.pagetitle = TEXT
+lib.pagetitle {
+    #wrap = <div class="header-h1 header-h1-left"><h1>|</h1></div>
+    wrap = <h1 class="default-inner-header">|</h1>
+    data = page : title
+}
+
+lib.headerContacts = COA
+lib.headerContacts {
+    wrap =  <div class="row">|</div>
+    10 = TEXT
+    10.wrap = <div class="header__phone col-xs-12 col-sm-6">|</div>
+    10.value = {$config.header.phone}
+
+    20 = TEXT
+    20.wrap = <div class="header__email col-xs-12 col-sm-6">|</div>
+    20.value = info@all-power.ru
+    20.typolink {
+        parameter = {$config.header.email}
+    }
+}

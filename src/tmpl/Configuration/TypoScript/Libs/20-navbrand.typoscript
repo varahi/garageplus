@@ -1,0 +1,10 @@
+lib.navbrand >
+lib.navbrand = COA
+lib.navbrand {
+    wrap = <h2 class="nav-brand">|</h2>
+    10 = TEXT
+    10 {
+        value = Главная
+        stdWrap.typolink.parameter =  {$config.navigation.rootPid}
+    }
+}

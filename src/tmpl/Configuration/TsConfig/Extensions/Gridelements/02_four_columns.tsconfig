@@ -1,0 +1,40 @@
+# Page TSConfig:
+tx_gridelements.overruleRecords = 1
+tx_gridelements.setup {
+    # ID of Element
+    Grid_4Cols {
+        title = Grid element - 4 columns
+        description = Four Columns with configurations
+        #flexformDS = FILE:EXT:tmpl/Configuration/FlexForms/02_three_columns.xml
+        icon = EXT:tmpl/Resources/Public/Icons/icon.gif
+        topLevelLayout = 1
+        config {
+            colCount = 4
+            rowCount = 1
+            rows {
+
+                1 {
+                    columns {
+                        1 {
+                            name = Left Column
+                            colPos = 0
+                        }
+                        2 {
+                            name = Center Column 1
+                            colPos = 1
+                        }
+                        3 {
+                            name = Center Column 2
+                            colPos = 2
+                        }
+                        4 {
+                            name = Right Column
+                            colPos = 3
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

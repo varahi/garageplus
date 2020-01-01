@@ -4,10 +4,59 @@
       xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
       data-namespace-typo3-fluid="true">
 
-<f:layout name="default" />
+<f:section name="content_slider">
+    <section class="slider">
+        {content_slider -> f:format.raw()}
+    </section>
+</f:section>
 
 <f:section name="content">
-    {content -> f:format.raw()}
+    <main role="main" class="container padding">
+        {content -> f:format.raw()}
+    </main>
+</f:section>
+
+<f:section name="content_parallax">
+    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.parallaxImage')}">
+        <f:then>
+            <section class="parallax-window" data-parallax="scroll"
+                     data-image-src="<f:cObject typoscriptObjectPath="lib.parallaxImage" />">
+                <div class="container">
+                    {content_parallax -> f:format.raw()}
+                </div>
+            </section>
+        </f:then>
+        <f:else>
+            <section class="parallax-window" data-parallax="scroll"
+                     data-image-src="typo3conf/ext/tmpl/Resources/Public/Images/opl-parallax-universe.jpg">
+                    <div class="container">
+                        {content_parallax -> f:format.raw()}
+                    </div>
+            </section>
+        </f:else>
+    </f:if>
+</f:section>
+
+<f:section name="content_teaser">
+    <div class="container padding">
+        {content_teaser -> f:format.raw()}
+    </div>
+</f:section>
+
+<f:section name="content_above_footer">
+    <div class="unfooter">
+        <div class="container">
+            {content_above_footer -> f:format.raw()}
+        </div>
+    </div>
+</f:section>
+
+<f:section name="content_footer">
+    <footer class="footer">
+        <div class="container padding">
+            {content_footer -> f:format.raw()}
+        </div>
+    </footer>
 </f:section>
 
 </html>

@@ -1,1 +1,15 @@
-lib.logo = TEXT
+lib.logo >
+lib.logo = COA
+lib.logo {
+    wrap = <div class="logo col padding-top-10">|</div>
+    10 = IMAGE
+    10 {
+        file = EXT:tmpl/Resources/Public/Images/logo.gif
+        altText = {$config.header.logoTitle}
+        titleText = {$config.header.logoTitle}
+        file.width = 216
+        file.height = 39
+        stdWrap.typolink.parameter =  {$config.navigation.rootPid}
+    }
+}
+

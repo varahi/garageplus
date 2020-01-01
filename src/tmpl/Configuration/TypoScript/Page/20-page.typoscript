@@ -75,26 +75,24 @@ page {
                 stdWrap.required = 1
             }
 
-            /*
-            content_sidebar < styles.content.get
-            content_sidebar.select.where = colPos=1
-            content_header < styles.content.get
-            content_header.select.where = colPos=3
-            content_objectimages < styles.content.get
-            content_objectimages.select.where = colPos=4
-            content_objectkeyfacts < styles.content.get
-            content_objectkeyfacts.select.where = colPos=5
-            content_objecttitle < styles.content.get
-            content_objecttitle.select.where = colPos=6
-            */
+            content_slider < styles.content.get
+            content_slider.select.where = colPos=1
+
+            content_parallax < styles.content.get
+            content_parallax.select.where = colPos=2
+
+            content_teaser < styles.content.get
+            content_teaser.select.where = colPos=3
+
+            content_above_footer < styles.content.get
+            content_above_footer.select.where = colPos=4
+
+            content_footer < styles.content.get
+            content_footer.select.where = colPos=5
 
         }
-
     }
-
 }
-
-
 
 #########################
 ##### DEVELOPMENT - Start

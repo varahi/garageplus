@@ -1,0 +1,18 @@
+
+lib.searchField = USER
+lib.searchField {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    vendorName = TYPO3\CMS
+    extensionName = IndexedSearch
+    pluginName = Pi2
+    switchableControllerActions {
+        Search {
+            1 = form
+            2 = search
+        }
+    }
+    view =< plugin.tx_indexedsearch.view
+    view.partialRootPaths.10 = EXT:tmpl/Resources/Private/Extensions/indexed_search//Partials/
+    view.templateRootPaths.10 = EXT:tmpl/Resources/Private/Extensions/indexed_search/Templates/
+    settings =< plugin.tx_indexedsearch.settings
+}
