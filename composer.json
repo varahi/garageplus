@@ -25,7 +25,6 @@
 		"consolidation/robo": "^1",
 		"cweagans/composer-patches": "^1.6",
 		"deployer/deployer": "^6",
-		"featdd/dpn-glossary": "^3.0",
 		"fluidtypo3/vhs": "^5.2",
 		"gridelementsteam/gridelements": "^9.2",
 		"helhum/config-loader": "0.9",
@@ -77,6 +76,11 @@
 		"squizlabs/php_codesniffer": "^3.4.0",
 		"typo3-console/php-server-command": "0.2.2",
 		"typo3/testing-framework": "4.11.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"T3Dev\\Tmpl\\" : "public_html/typo3conf/ext/tmpl/Classes"
+		}
 	},
 	"scripts": {
 		"typo3-cms-scripts": [
