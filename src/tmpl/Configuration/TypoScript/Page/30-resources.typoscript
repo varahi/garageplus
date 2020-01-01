@@ -1,0 +1,43 @@
+# manually inserted CSS files
+
+page {
+    includeCSS {
+        10_fonts = https://fonts.googleapis.com/css?family=Playfair+Display:700,900
+        20_bootstrap = EXT:tmpl/Resources/Public/css/bootstrap/bootstrap.css
+        30_bootstrap_grid = EXT:tmpl/Resources/Public/css/bootstrap/bootstrap-grid.css
+        40_bootstrap_reboot = EXT:tmpl/Resources/Public/css/bootstrap/bootstrap-reboot.css
+        50_fonts = https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+        60_animate = EXT:tmpl/Resources/Public/css/animate.css
+        70_carousel = EXT:tmpl/Resources/Public/css/carousel/owl.carousel.min.css
+
+        80_sm_core = EXT:tmpl/Resources/Public/css/smartmenu/sm-core-css.css
+        90_sm_clean = EXT:tmpl/Resources/Public/css/smartmenu/sm-clean/sm-clean.css
+        100_smartmenu_bootstrap = EXT:tmpl/Resources/Public/css/smartmenu/addons/jquery.smartmenus.bootstrap-4.css
+
+        200_custom = EXT:tmpl/Resources/Public/css/custom.css
+        210_media_queries = EXT:tmpl/Resources/Public/css/media_queries.css
+    }
+
+    includeJSLibs {
+        #10_jquery = EXT:tmpl/Resources/Public/lib/jquery/dist/jquery.min.js
+    }
+
+    includeJSFooterlibs {
+        10_jquery = EXT:tmpl/Resources/Public/js/jquery-3.3.1.min.js.js
+        20_bootstrap = EXT:tmpl/Resources/Public/js/bootstrap.js
+        30_smartmenu = EXT:tmpl/Resources/Public/js/smartmenu/jquery.smartmenus.js
+        40_smartmenu_bootstrap = EXT:tmpl/Resources/Public/js/smartmenu/addons/jquery.smartmenus.bootstrap-4.js
+        50_parallax = EXT:tmpl/Resources/Public/js/parallax.min.js
+        60_pace = EXT:tmpl/Resources/Public/js/pace.min.js
+        60_carousel = EXT:tmpl/Resources/Public/js/carousel/owl.carousel.min.js
+        100_custom = EXT:tmpl/Resources/Public/js/custom.js
+    }
+}
+
+
+page {
+    headerData {
+        //998 = TEXT
+        //998.value =
+    }
+}
