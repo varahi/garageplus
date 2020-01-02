@@ -1,2 +1,9 @@
-lib.copyright = TEXT
-lib.copyright.value = {$config.footer.copyright}
+#lib.copyright = TEXT
+#lib.copyright.value = {$config.footer.copyright}
+
+lib.copyright  = RECORDS
+lib.copyright  {
+    source = {$config.footer.copyright}
+    tables = tt_content
+    dontChekPid = 1
+}

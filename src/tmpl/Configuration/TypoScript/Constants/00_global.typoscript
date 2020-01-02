@@ -21,6 +21,8 @@ config {
             title = Отправить сообщение
             source = 103
         }
+        // Copyright and footer address source
+        copyright = 78
     }
     navigation {
         rootPid = 1
