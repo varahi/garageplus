@@ -86,10 +86,6 @@ page {
 
             content_above_footer < styles.content.get
             content_above_footer.select.where = colPos=4
-
-            content_footer < styles.content.get
-            content_footer.select.where = colPos=5
-
         }
     }
 }

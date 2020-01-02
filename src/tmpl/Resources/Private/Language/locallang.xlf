@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2019-08-20T13:55:07Z">
+        <header>
+            <generator>LFEditor</generator>
+        </header>
+        <body>
+            <trans-unit id="ce.teaser_card.more">
+                <source><![CDATA[More]]></source>
+            </trans-unit>
+            <trans-unit id="page.contacts">
+                <source><![CDATA[Contacts]]></source>
+            </trans-unit>
+            <trans-unit id="page.content.about_company">
+                <source><![CDATA[About company]]></source>
+            </trans-unit>
+            <trans-unit id="page.content.close">
+                <source><![CDATA[Close]]></source>
+            </trans-unit>
+            <trans-unit id="page.content.contacts">
+                <source><![CDATA[Contacts]]></source>
+            </trans-unit>
+            <trans-unit id="page.content.download">
+                <source><![CDATA[Download]]></source>
+            </trans-unit>
+            <trans-unit id="page.content.sendMessage">
+                <source><![CDATA[Send Message]]></source>
+            </trans-unit>
+            <trans-unit id="page.content.services">
+                <source><![CDATA[Services]]></source>
+            </trans-unit>
+            <trans-unit id="search.submit">
+                <source><![CDATA[Search]]></source>
+            </trans-unit>
+            <trans-unit id="slider.link_more">
+                <source><![CDATA[More]]></source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

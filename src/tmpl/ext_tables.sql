@@ -4,6 +4,7 @@
 CREATE TABLE pages (
 	hide_breadcrumb int(11) unsigned DEFAULT '0' NOT NULL,
 	hide_pagetitle int(11) unsigned DEFAULT '0' NOT NULL,
+	hide_container_class int(11) unsigned DEFAULT '0' NOT NULL,
 	show_animation int(11) unsigned DEFAULT '0' NOT NULL,
 );
 

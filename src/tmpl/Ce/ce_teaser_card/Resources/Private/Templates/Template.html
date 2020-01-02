@@ -1,0 +1,25 @@
+<div class="card teaser-card">
+    <div class="row no-gutters">
+        <div class="col-lg-4">
+            <f:if condition="{images.0}">
+                <f:image src="{images.0.uid}" treatIdAsReference="1"
+                         alt="{images.0.alternative}" title="{images.0.title}" maxWidth="550" maxHeight="550" class="card-img" />
+            </f:if>
+        </div>
+        <div class="col-lg-8">
+            <div class="card-body">
+                <f:if condition="{data.header}">
+                    <h5>{data.header}</h5>
+                </f:if>
+                <f:if condition="{data.bodytext}">
+                    <p class="card-text"><f:format.raw>{data.bodytext}</f:format.raw></p>
+                </f:if>
+                <f:if condition="{data.teaser_link}">
+                    <f:link.page pageUid="{data.teaser_link}" class="card-link">
+                        <f:translate key="ce.teaser_card.more" extensionName="tmpl"/>
+                    </f:link.page>
+                </f:if>
+            </div>
+        </div>
+    </div>
+</div>

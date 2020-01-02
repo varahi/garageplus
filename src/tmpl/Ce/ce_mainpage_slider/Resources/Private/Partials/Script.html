@@ -1,0 +1,24 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<script>
+
+    $(document).ready(function() {
+        // Carousel
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            animateOut: 'fadeOut',
+            autoplay:true,
+            autoplayTimeout: <f:format.raw>{data.slider_data_speed}</f:format.raw>,
+            autoplayHoverPause:true,
+            margin: 10,
+            items: 1,
+            nav: true,
+            dots: true,
+            dotsContainer: '.slider__teaser'
+        });
+
+    });
+
+</script>
+
+</html>
