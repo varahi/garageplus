@@ -50,3 +50,8 @@ config {
     noScaleUp = 1
 
 }
+
+page.config.headerComment (
+  Dmitry Vasilev dmitry@t3dev.ru
+  ___________________________________
+)

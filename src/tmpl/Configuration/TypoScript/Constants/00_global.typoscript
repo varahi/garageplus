@@ -13,6 +13,8 @@ config {
     header {
         logoTitle = Технический Центр GaragePlus
         slogan = <span>Технический центр</span><br />Независимый специалист
+        phone = <a href="tel:+74952218480">+7 (495) 221-84-80</a>
+        email = master@garageplus.ru
     }
     navigation {
         rootPid = 1

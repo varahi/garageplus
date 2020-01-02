@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2019-10-24T16:32:36Z">
+        <header>
+            <generator>LFEditor</generator>
+        </header>
+        <body>
+            <trans-unit id="ce.teaser_card.bodytext">
+                <source><![CDATA[Bodytext]]></source>
+            </trans-unit>
+            <trans-unit id="ce.teaser_card.div">
+                <source><![CDATA[Teaser card data]]></source>
+            </trans-unit>
+            <trans-unit id="ce.teaser_card.header">
+                <source><![CDATA[Title]]></source>
+            </trans-unit>
+            <trans-unit id="ce.teaser_card.image">
+                <source><![CDATA[Image]]></source>
+            </trans-unit>
+            <trans-unit id="ce.teaser_card.link">
+                <source><![CDATA[Link]]></source>
+            </trans-unit>
+            <trans-unit id="ce.teaser_card_description">
+                <source><![CDATA[Teaser card for gridelements]]></source>
+            </trans-unit>
+            <trans-unit id="ce.teaser_card_title">
+                <source><![CDATA[Teaser card]]></source>
+            </trans-unit>
+            <trans-unit id="ce.teaser_card_wizard_title">
+                <source><![CDATA[Teaser Card]]></source>
+            </trans-unit>
+            <trans-unit id="flexform.ce_slider_arrows">
+                <source><![CDATA[Enable arrows (controls)]]></source>
+            </trans-unit>
+            <trans-unit id="flexform.ce_slider_autoplay">
+                <source><![CDATA[Autoplay]]></source>
+            </trans-unit>
+            <trans-unit id="flexform.ce_slider_autoplaySpeed">
+                <source><![CDATA[Autoplay Speed]]></source>
+            </trans-unit>
+            <trans-unit id="flexform.ce_slider_dots">
+                <source><![CDATA[Enable dots (controls)]]></source>
+            </trans-unit>
+            <trans-unit id="flexform.ce_slider_fade">
+                <source><![CDATA[Fade]]></source>
+            </trans-unit>
+            <trans-unit id="flexform.ce_slider_infinite">
+                <source><![CDATA[Infinite]]></source>
+            </trans-unit>
+            <trans-unit id="flexform.ce_slider_speed">
+                <source><![CDATA[Speed of Transition]]></source>
+            </trans-unit>
+            <trans-unit id="header.default_inner_header">
+                <source><![CDATA[Default inner header]]></source>
+            </trans-unit>
+            <trans-unit id="header.h2_center">
+                <source><![CDATA[h2 center with borders]]></source>
+            </trans-unit>
+            <trans-unit id="header.h2_left">
+                <source><![CDATA[h2 left with borders]]></source>
+            </trans-unit>
+            <trans-unit id="header.h2_left_white">
+                <source><![CDATA[h2 left with borders white color]]></source>
+            </trans-unit>
+            <trans-unit id="header.h2_right">
+                <source><![CDATA[h2 right with borders]]></source>
+            </trans-unit>
+            <trans-unit id="header.h3_center">
+                <source><![CDATA[h3 center with borders]]></source>
+            </trans-unit>
+            <trans-unit id="header.h3_left">
+                <source><![CDATA[h3 left with borders]]></source>
+            </trans-unit>
+            <trans-unit id="header.h3_right">
+                <source><![CDATA[h3 right with borders]]></source>
+            </trans-unit>
+            <trans-unit id="page.hide_breadcrumb">
+                <source><![CDATA[Hide Breadcrumb]]></source>
+            </trans-unit>
+            <trans-unit id="page.hide_container_class">
+                <source><![CDATA[Hide Container Class]]></source>
+            </trans-unit>
+            <trans-unit id="page.hide_pagetitle">
+                <source><![CDATA[Hide Pagetitle]]></source>
+            </trans-unit>
+            <trans-unit id="page.show_animation">
+                <source><![CDATA[Show animation of content elements]]></source>
+            </trans-unit>
+            <trans-unit id="tca.tab.sliderElements">
+                <source><![CDATA[Slider Elements]]></source>
+            </trans-unit>
+            <trans-unit id="tt_content.link">
+                <source><![CDATA[Link]]></source>
+            </trans-unit>
+            <trans-unit id="tt_content.slider_data_autoplay_speed">
+                <source><![CDATA[Slider autoplay speed]]></source>
+            </trans-unit>
+            <trans-unit id="tt_content.slider_data_speed">
+                <source><![CDATA[Slider data speed]]></source>
+            </trans-unit>
+            <trans-unit id="tx_tmpl_tmpl.description">
+                <source><![CDATA[Site template]]></source>
+            </trans-unit>
+            <trans-unit id="tx_tmpl_tmpl.name">
+                <source><![CDATA[Tmpl]]></source>
+            </trans-unit>
+            <trans-unit id="tx_tmplcemainslider_item">
+                <source><![CDATA[Mainpage Slider Item]]></source>
+            </trans-unit>
+            <trans-unit id="tx_tmplcemainslider_item.caption_description">
+                <source><![CDATA[Caption description]]></source>
+            </trans-unit>
+            <trans-unit id="tx_tmplcemainslider_item.caption_title">
+                <source><![CDATA[Caption title]]></source>
+            </trans-unit>
+            <trans-unit id="tx_tmplcemainslider_item.image">
+                <source><![CDATA[Image]]></source>
+            </trans-unit>
+            <trans-unit id="tx_tmplcemainslider_item.link">
+                <source><![CDATA[Link]]></source>
+            </trans-unit>
+            <trans-unit id="tx_tmplcemainslider_item.link_title">
+                <source><![CDATA[Text for link]]></source>
+            </trans-unit>
+            <trans-unit id="tx_tmplcemainslider_item.slide_teaser">
+                <source><![CDATA[Slide teaser]]></source>
+            </trans-unit>
+            <trans-unit id="tx_tmplcemainslider_item.title">
+                <source><![CDATA[Title]]></source>
+            </trans-unit>
+            <trans-unit id="wizard.mainpage_slider_description">
+                <source><![CDATA[Mainpage Slider]]></source>
+            </trans-unit>
+            <trans-unit id="wizard.mainpage_slider_item">
+                <source><![CDATA[Mainpage slider item]]></source>
+            </trans-unit>
+            <trans-unit id="wizard.mainpage_slider_title">
+                <source><![CDATA[Mainpage Slider]]></source>
+            </trans-unit>
+            <trans-unit id="wizard.simple_slider_description">
+                <source><![CDATA[Slider for news and single]]></source>
+            </trans-unit>
+            <trans-unit id="wizard.simple_slider_title">
+                <source><![CDATA[Slider for news]]></source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2019-10-24T16:32:36Z">
+        <header>
+            <generator>LFEditor</generator>
+        </header>
+        <body>
+            <trans-unit id="page.hide_breadcrumb" approved="yes">
+                <source><![CDATA[Hide Breadcrumb]]></source>
+                <target><![CDATA[Скрыть хлебные крошки]]></target>
+            </trans-unit>
+            <trans-unit id="page.hide_container_class" approved="yes">
+                <source><![CDATA[Hide Container Class]]></source>
+                <target><![CDATA[Скрыть класс "container" на этой странице]]></target>
+            </trans-unit>
+            <trans-unit id="page.hide_pagetitle" approved="yes">
+                <source><![CDATA[Hide Pagetitle]]></source>
+                <target><![CDATA[Скрыть автозаголовок в области контента]]></target>
+            </trans-unit>
+            <trans-unit id="page.show_animation" approved="yes">
+                <source><![CDATA[Show animation of content elements]]></source>
+                <target><![CDATA[Анимировать элементы контента на этой странице]]></target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

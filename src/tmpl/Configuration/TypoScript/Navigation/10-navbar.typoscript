@@ -1,19 +1,22 @@
 lib.navbar = COA
 lib.navbar {
+    wrap = <nav class="navbar navbar-expand-lg navbar-light bg-light rounded mb-4">|</nav>
 
     # Responsive Navbar Part 1
     10 = TEXT
     10 {
-        # fontawesome
-        #value = <span class="fa fa-bars"></span>
-        # glyphicon from bootstrap
-        #value = <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        value (
+            <a class="navbar-brand" href="#">Главная</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        )
     }
-    10 >
 
     # Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse.
     20 = HMENU
-    20.wrap = <ul id="main-menu" class="sm sm-blue">|</ul>
+    20.wrap = <div class="collapse navbar-collapse" id="navbarNavDropdown"><ul class="nav navbar-nav mr-auto">|</ul></div>
     20 {
         entryLevel = 0
         excludeUidList = {$config.navigation.excludeUidList}
@@ -25,6 +28,7 @@ lib.navbar {
             NO = 1
             NO.allWrap >
             NO.wrapItemAndSub = <li>|</li>
+            NO.ATagParams = class="nav-link"
             CUR = 1
             CUR < .NO
             CUR.wrapItemAndSub = <li class="active">|</li>
@@ -32,28 +36,34 @@ lib.navbar {
             ACT < .CUR
 
             # Dropdown menu
-            #IFSUB = 1
-            #IFSUB < .NO
-            #IFSUB.wrapItemAndSub = <li class="dropdown">|</li>
-            #IFSUB.ATagParams = class="dropdown-toggle" role="button" data-toggle="dropdown" data-target="#"
-            #IFSUB.ATagBeforeWrap = 1
+            IFSUB = 1
+            IFSUB < .NO
+
+            IFSUB.before = <a href="#" class="nav-link dropdown-toggle">
+            IFSUB.after = </a>
+            IFSUB.doNotLinkIt = 1
+            IFSUB.wrapItemAndSub = <li class="nav-item dropdown">|</li>
+            #IFSUB.ATagParams = class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" data-target="#"
+            IFSUB.ATagParams = class="nav-link dropdown-toggle"
+            IFSUB.ATagBeforeWrap = 1
             #IFSUB.stdWrap.wrap = |<b class="caret"></b>
-            #CURIFSUB = 1
-            #CURIFSUB < .IFSUB
-            #CURIFSUB.wrapItemAndSub = <li class="dropdown active">|</li>
-            #ACTIFSUB = 1
-            #ACTIFSUB < .CURIFSUB
+            CURIFSUB = 1
+            CURIFSUB < .IFSUB
+            CURIFSUB.wrapItemAndSub = <li class="dropdown active">|</li>
+            ACTIFSUB = 1
+            ACTIFSUB < .CURIFSUB
         }
 
 
         2 = TMENU
         2 {
-            wrap = <ul>|</ul>
+            wrap = <ul class="dropdown-menu">|</ul>
             expAll = 1
 
             NO = 1
             NO.allWrap >
             NO.wrapItemAndSub = <li>|</li>
+            NO.ATagParams = class="dropdown-item"
             CUR = 1
             CUR < .NO
             CUR.wrapItemAndSub = <li class="active">|</li>
@@ -70,10 +80,10 @@ lib.navbar {
             SPC.allWrap = <li class="divider"></li>
         }
 
-        3 < .2
+        #3 < .2
         # no submenus anymore
-        3.IFSUB >
-        3.CURIFSUB >
-        3.ACTIFSUB >
+        #3.IFSUB >
+        #3.CURIFSUB >
+        #3.ACTIFSUB >
     }
 }
