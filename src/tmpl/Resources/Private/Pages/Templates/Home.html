@@ -40,7 +40,10 @@
 
     <div class="unfooter">
         <div class="container">
-            {content_above_footer -> f:format.raw()}
+            <div class="footer__address">
+                {content_above_footer -> f:format.raw()}
+            </div>
+            <f:cObject typoscriptObjectPath="lib.footerForm" />
         </div>
     </div>
 

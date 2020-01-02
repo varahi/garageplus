@@ -305,7 +305,10 @@ h3 {
     textarea {
       min-height: 175px;
     }
-    input[type="text"] {
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea {
       margin-bottom: 30px;
     }
   }
@@ -324,7 +327,15 @@ h3 {
     margin-bottom: 30px;
   }
 
+  .powermail_fieldwrap_type_html {
+    color: #000;
+  }
+  ul.parsley-errors-list {
+    color: #ff0000;
+  }
 }
+
+
 
 .powermail_fieldwrap_type_captcha label {
   display: block;
