@@ -22,7 +22,6 @@
 		"sort-packages": true
 	},
 	"require": {
-		"configloader/configloader": "^9.5",
 		"consolidation/robo": "^1",
 		"cweagans/composer-patches": "^1.6",
 		"deployer/deployer": "^6",
