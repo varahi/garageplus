@@ -520,9 +520,6 @@ table th {
   a {
     text-decoration: none;
   }
-  img {
-    height: 896px;
-  }
 }
 
 .owl-carousel .owl-stage-outer {
@@ -535,18 +532,32 @@ table th {
 }
 
 .slider__teaser {
-  height: 70px;
+  height: 100px;
   a {
-    display: inline-block;
+    display: block;
     border: 1px solid #e2e3e5;
     border-bottom: 1px solid $border_color;
     color: $border_color;
+    height: 100px;
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    padding: 5px 10px;
+
+    /*
     width: auto;
     min-width: 170px;
     padding: 5px 10px;
-    height: 65px;
+    height: 80px;
     margin-right: 10px;
     text-align: center;
+
+     */
+    span.slider__teaser_num {
+      display: none;
+    }
+
   }
 }
 .slider__teaser a:hover {
