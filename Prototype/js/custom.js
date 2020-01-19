@@ -67,11 +67,11 @@ $(document).ready(function() {
     });
     jQuery('.card-animate-3').addClass("visible").viewportChecker ({
         classToAdd: 'visible animated fadeInRight',
-        offset: 300
+        offset: 100
     });
     jQuery('.card-animate-4').addClass("visible").viewportChecker ({
         classToAdd: 'visible animated fadeInRight',
-        offset: 400
+        offset: 200
     });
 
 });
