@@ -1,0 +1,376 @@
+// Custom.scss
+/* Variables */
+
+$main_content_background: #fff;
+$btn-primary_color: #00B0F3;
+$link_color: #00B0F3;
+
+%gradient1 {
+  /*background: linear-gradient(180deg,#000 0,#2e2e2e 300px,#000 1000px);*/
+
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 66%, rgba(45,45,45,1) 93%, rgba(44,44,44,1) 94%, rgba(20,20,20,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 66%,rgba(45,45,45,1) 93%,rgba(44,44,44,1) 94%,rgba(20,20,20,1) 100%);
+  background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 66%,rgba(45,45,45,1) 93%,rgba(44,44,44,1) 94%,rgba(20,20,20,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#141414',GradientType=0 );
+
+}
+
+/*
+@font-face{font-family:'MBCorpoATitleCond-Regular-Web';font-display:swap;src:url("../fonts/WOFF2/MBCorpoATitleCond-Regular-Web.woff2") format("woff2"),url("../fonts/WOFF/MBCorpoATitleCond-Regular-Web.woff") format("woff")}
+@font-face{font-family:'MBCorpoSTextSemiCond-Light-Web';font-display:swap;src:url("../fonts/WOFF2/MBCorpoSTextSemiCond-Light-Web.woff2") format("woff2"),url("../fonts/WOFF/MBCorpoSTextSemiCond-Light-Web.woff") format("woff")}
+@font-face{font-family:'MBCorpoSTitle-Regular-Web';font-display:swap;src:url("../fonts/WOFF2/MBCorpoSTitle-Regular-Web.woff2") format("woff2"),url("../fonts/WOFF/MBCorpoSTitle-Regular-Web.woff") format("woff")}
+@font-face{font-family:'MBCorpoSText-Regular-Web';font-display:swap;src:url("../fonts/WOFF2/MBCorpoSText-Regular-Web.woff2") format("woff2"),url("../fonts/WOFF/MBCorpoSText-Regular-Web.woff") format("woff")}
+@font-face{font-family:'DaimlerCAC-Regular';font-display:swap;src:url("../fonts/EOT/DaimlerCAC-Regular.eot");src:url("../fonts/EOT/DaimlerCAC-Regular.eot?#iefix") format("embedded-opentype"),url("../fonts/WOFF2/DaimlerCAC-Regular.woff2") format("woff2"),url("../fonts/WOFF/DaimlerCAC-Regular.woff") format("woff"),url("../fonts/TTF/DaimlerCAC-Regular.ttf") format("truetype"),url("../fonts/SVG/DaimlerCAC-Regular.svg#DaimlerCAC-Regular") format("svg")}
+@font-face{font-family:'DaimlerCS-Light';font-display:swap;src:url("../fonts/EOT/DaimlerCS-Light.eot");src:url("../fonts/EOT/DaimlerCS-Light.eot?#iefix") format("embedded-opentype"),url("../fonts/WOFF2/DaimlerCS-Light.woff2") format("woff2"),url("../fonts/WOFF/DaimlerCS-Light.woff") format("woff"),url("../fonts/TTF/DaimlerCS-Light.ttf") format("truetype"),url("../fonts/SVG/DaimlerCS-Light.svg#DaimlerCS-Light") format("svg")}
+@font-face{font-family:'DaimlerCS-Regular';font-display:swap;src:url("../fonts/EOT/DaimlerCS-Regular.eot");src:url("../fonts/EOT/DaimlerCS-Regular.eot?#iefix") format("embedded-opentype"),url("../fonts/WOFF2/DaimlerCS-Regular.woff2") format("woff2"),url("../fonts/WOFF/DaimlerCS-Regular.woff") format("woff"),url("../fonts/TTF/DaimlerCS-Regular.ttf") format("truetype"),url("../fonts/SVG/DaimlerCS-Regular.svg#DaimlerCS-Regular") format("svg")}
+@font-face{font-family:'DaimlerCS-Demi';font-display:swap;src:url("../fonts/EOT/DaimlerCS-Demi.eot");src:url("../fonts/EOT/DaimlerCS-Demi.eot?#iefix") format("embedded-opentype"),url("../fonts/WOFF2/DaimlerCS-Demi.woff2") format("woff2"),url("../fonts/WOFF/DaimlerCS-Demi.woff") format("woff"),url("../fonts/TTF/DaimlerCS-Demi.ttf") format("truetype"),url("../fonts/SVG/DaimlerCS-Demi.svg#DaimlerCS-Demi") format("svg")}
+@font-face{font-family:'DaimlerCACArab-Regular';font-display:swap;src:url("../fonts/EOT/DaimlerCACArab-Regular.eot");src:url("../fonts/EOT/DaimlerCACArab-Regular.eot?#iefix") format("embedded-opentype"),url("../fonts/WOFF2/DaimlerCACArab-Regular.woff2") format("woff2"),url("../fonts/WOFF/DaimlerCACArab-Regular.woff") format("woff"),url("../fonts/TTF/DaimlerCACArab-Regular.ttf") format("truetype"),url("../fonts/SVG/DaimlerCACArab-Regular.svg#DaimlerCAC-Regular") format("svg")}
+@font-face{font-family:'DaimlerCSArab-Light';font-display:swap;src:url("../fonts/EOT/DaimlerCSArab-Light.eot");src:url("../fonts/EOT/DaimlerCSArab-Light.eot?#iefix") format("embedded-opentype"),url("../fonts/WOFF2/DaimlerCSArab-Light.woff2") format("woff2"),url("../fonts/WOFF/DaimlerCSArab-Light.woff") format("woff"),url("../fonts/TTF/DaimlerCSArab-Light.ttf") format("truetype"),url("../fonts/SVG/DaimlerCSArab-Light.svg#DaimlerCS-Light") format("svg")}
+@font-face{font-family:'DaimlerCSArab-Regular';font-display:swap;src:url("../fonts/EOT/DaimlerCSArab-Regular.eot");src:url("../fonts/EOT/DaimlerCSArab-Regular.eot?#iefix") format("embedded-opentype"),url("../fonts/WOFF2/DaimlerCSArab-Regular.woff2") format("woff2"),url("../fonts/WOFF/DaimlerCSArab-Regular.woff") format("woff"),url("../fonts/TTF/DaimlerCSArab-Regular.ttf") format("truetype"),url("../fonts/SVG/DaimlerCSArab-Regular.svg#DaimlerCS-Regular") format("svg")}
+@font-face{font-family:'DaimlerCSArab-Demi';font-display:swap;src:url("../fonts/EOT/DaimlerCSArab-Demi.eot");src:url("../fonts/EOT/DaimlerCSArab-Demi.eot?#iefix") format("embedded-opentype"),url("../fonts/WOFF2/DaimlerCSArab-Demi.woff2") format("woff2"),url("../fonts/WOFF/DaimlerCSArab-Demi.woff") format("woff"),url("../fonts/TTF/DaimlerCSArab-Demi.ttf") format("truetype"),url("../fonts/SVG/DaimlerCSArab-Demi.svg#DaimlerCS-Demi") format("svg")}
+*/
+
+
+@font-face{font-family:'MBCorpoATitleCond-Regular-Web';font-display:swap;src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF2/MBCorpoATitleCond-Regular-Web.woff2") format("woff2"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF/MBCorpoATitleCond-Regular-Web.woff") format("woff")}
+@font-face{font-family:'MBCorpoSTextSemiCond-Light-Web';font-display:swap;src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF2/MBCorpoSTextSemiCond-Light-Web.woff2") format("woff2"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF/MBCorpoSTextSemiCond-Light-Web.woff") format("woff")}
+@font-face{font-family:'MBCorpoSTitle-Regular-Web';font-display:swap;src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF2/MBCorpoSTitle-Regular-Web.woff2") format("woff2"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF/MBCorpoSTitle-Regular-Web.woff") format("woff")}
+@font-face{font-family:'MBCorpoSText-Regular-Web';font-display:swap;src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF2/MBCorpoSText-Regular-Web.woff2") format("woff2"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF/MBCorpoSText-Regular-Web.woff") format("woff")}
+@font-face{font-family:'DaimlerCAC-Regular';font-display:swap;src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/EOT/DaimlerCAC-Regular.eot");src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/EOT/DaimlerCAC-Regular.eot?#iefix") format("embedded-opentype"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF2/DaimlerCAC-Regular.woff2") format("woff2"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF/DaimlerCAC-Regular.woff") format("woff"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/TTF/DaimlerCAC-Regular.ttf") format("truetype"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/SVG/DaimlerCAC-Regular.svg#DaimlerCAC-Regular") format("svg")}
+@font-face{font-family:'DaimlerCS-Light';font-display:swap;src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/EOT/DaimlerCS-Light.eot");src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/EOT/DaimlerCS-Light.eot?#iefix") format("embedded-opentype"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF2/DaimlerCS-Light.woff2") format("woff2"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF/DaimlerCS-Light.woff") format("woff"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/TTF/DaimlerCS-Light.ttf") format("truetype"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/SVG/DaimlerCS-Light.svg#DaimlerCS-Light") format("svg")}
+@font-face{font-family:'DaimlerCS-Regular';font-display:swap;src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/EOT/DaimlerCS-Regular.eot");src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/EOT/DaimlerCS-Regular.eot?#iefix") format("embedded-opentype"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF2/DaimlerCS-Regular.woff2") format("woff2"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF/DaimlerCS-Regular.woff") format("woff"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/TTF/DaimlerCS-Regular.ttf") format("truetype"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/SVG/DaimlerCS-Regular.svg#DaimlerCS-Regular") format("svg")}
+@font-face{font-family:'DaimlerCS-Demi';font-display:swap;src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/EOT/DaimlerCS-Demi.eot");src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/EOT/DaimlerCS-Demi.eot?#iefix") format("embedded-opentype"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF2/DaimlerCS-Demi.woff2") format("woff2"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF/DaimlerCS-Demi.woff") format("woff"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/TTF/DaimlerCS-Demi.ttf") format("truetype"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/SVG/DaimlerCS-Demi.svg#DaimlerCS-Demi") format("svg")}
+@font-face{font-family:'DaimlerCACArab-Regular';font-display:swap;src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/EOT/DaimlerCACArab-Regular.eot");src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/EOT/DaimlerCACArab-Regular.eot?#iefix") format("embedded-opentype"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF2/DaimlerCACArab-Regular.woff2") format("woff2"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF/DaimlerCACArab-Regular.woff") format("woff"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/TTF/DaimlerCACArab-Regular.ttf") format("truetype"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/SVG/DaimlerCACArab-Regular.svg#DaimlerCAC-Regular") format("svg")}
+@font-face{font-family:'DaimlerCSArab-Light';font-display:swap;src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/EOT/DaimlerCSArab-Light.eot");src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/EOT/DaimlerCSArab-Light.eot?#iefix") format("embedded-opentype"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF2/DaimlerCSArab-Light.woff2") format("woff2"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF/DaimlerCSArab-Light.woff") format("woff"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/TTF/DaimlerCSArab-Light.ttf") format("truetype"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/SVG/DaimlerCSArab-Light.svg#DaimlerCS-Light") format("svg")}
+@font-face{font-family:'DaimlerCSArab-Regular';font-display:swap;src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/EOT/DaimlerCSArab-Regular.eot");src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/EOT/DaimlerCSArab-Regular.eot?#iefix") format("embedded-opentype"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF2/DaimlerCSArab-Regular.woff2") format("woff2"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF/DaimlerCSArab-Regular.woff") format("woff"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/TTF/DaimlerCSArab-Regular.ttf") format("truetype"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/SVG/DaimlerCSArab-Regular.svg#DaimlerCS-Regular") format("svg")}
+@font-face{font-family:'DaimlerCSArab-Demi';font-display:swap;src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/EOT/DaimlerCSArab-Demi.eot");src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/EOT/DaimlerCSArab-Demi.eot?#iefix") format("embedded-opentype"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF2/DaimlerCSArab-Demi.woff2") format("woff2"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF/DaimlerCSArab-Demi.woff") format("woff"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/TTF/DaimlerCSArab-Demi.ttf") format("truetype"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/SVG/DaimlerCSArab-Demi.svg#DaimlerCS-Demi") format("svg")}
+
+/* Body */
+body {
+  @extend %gradient1;
+  height: auto;
+  min-height: 1000px;
+  font-size: 1.1rem;
+
+  /*line-height: 1;
+  border: 0;
+  margin: 0;
+  padding: 0;*/
+}
+
+/* Header */
+.header {
+  padding: 20px 0;
+
+  .logo {
+    float: right;
+  }
+
+}
+
+/* Navigation */
+.navbar {
+  font-size: 16px;
+}
+
+/* Content */
+main.content {
+  padding: 20px 0 0 0;
+  font-family: "MBCorpoSTitle-Regular-Web", "DaimlerCS-Regular", Helvetica,Arial, sans-serif;
+  color: #3C3C3C;
+
+  .main-content {
+    padding: 20px;
+    background: $main_content_background;
+  }
+  .card-text-small {
+    color: #5c5c5c;
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: $btn-primary_color;
+    border-color: $btn-primary_color;
+  }
+}
+
+h1,h2,h3 {
+  font-family: "MBCorpoATitleCond-Regular-Web","DaimlerCAC-Regular",Helvetica,Arial,sans-serif;
+}
+
+h1 {
+
+}
+h2 {
+
+}
+h3 {
+  /*
+  font-size: 1rem;
+  font-family: "MBCorpoSTitle-Regular-Web","DaimlerCS-Regular",Helvetica,Arial,sans-serif;
+  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: .00912em;
+  padding-bottom: .15788em;
+  margin-top: 2px;
+  display: block;
+*/
+}
+
+/* Slider */
+.slider {
+  .slide_caption {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+
+    &--title {
+      font-size: 3.125rem;
+      font-family: "MBCorpoATitleCond-Regular-Web","DaimlerCAC-Regular",Helvetica,Arial,sans-serif;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-top: 0;
+      padding-bottom: .005em;
+      margin-top: 1.17em;
+
+      &--white {
+        color: #fff;
+      }
+    }
+    &--description--white {
+      color: #fff;
+    }
+
+  }
+}
+
+.owl-nav {
+  display: none;
+}
+.owl-dots {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  .owl-dot {
+    span {
+      display: block;
+      width: 60px;
+      height: 5px;
+      background: #fff !important;
+      margin: 0 20px;
+    }
+  }
+  .active span {
+    background: $btn-primary_color !important;
+  }
+}
+
+
+/* Table */
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #694442;
+  padding: .35em;
+}
+table tr:nth-child(odd){
+  background: #fff;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  background: #fff;
+  padding-left: 0;
+  a {
+    color: $link_color;
+  }
+}
+.breadcrumb-item.active {
+  color: #000;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  color: #694442;
+  content: "/";
+
+}
+
+
+/* Powermail */
+.powermail {
+  &__container {
+    background: #fff;
+    padding: 20px;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    textarea {
+      min-height: 175px;
+    }
+    input[type="text"] {
+      margin-bottom: 30px;
+    }
+  }
+  &__form_submit {
+    /*position: absolute;
+    right: 0;
+    bottom: 0;*/
+    margin-top: 10px;
+  }
+
+  &__container label,
+  label {
+    display: none;
+  }
+  input[type="text"] {
+    margin-bottom: 30px;
+  }
+}
+
+.powermail_fieldwrap_type_captcha label {
+  display: block;
+}
+.powermail_captcha {
+  margin: 10px 0 0 -30px;
+}
+
+.powermail_fieldset_4 {
+  width: 100% !important;
+
+  .col-md-6 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+  }
+}
+
+/* Powermail in modalbox */
+
+/* Footer */
+.under-footer {
+  padding: 30px 0;
+  background: transparent;
+  min-height: 200px;
+  color: #fff;
+  h2 {
+    color: #fff;
+    &:before {
+      border-bottom: 2px solid #fff;
+    }
+    &:after {
+      border-bottom: 2px solid #fff;
+    }
+  }
+}
+
+
+/* Parallax */
+.parallax-window {
+  padding-top: 30px;
+  min-height: 400px;
+  background: transparent;
+  color: #fff;
+  h2,h3 {
+    color: #fff;
+  }
+  .header-h1 h2::before,
+  .header-h1 h3::before {
+    border-bottom: 2px solid #fff;
+  }
+  .header-h1 h2::after,
+  .header-h1 h3::after{
+    border-bottom: 2px solid #fff;
+  }
+}
+
+/* Pace */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.pace-inactive {
+  display: none;
+}
+.pace .pace-progress {
+  background: #694442;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+
+
+#toTop {
+  background: url('../img/to-top.png') 50% 50% no-repeat;
+  width: 69px !important;
+  height: 69px !important;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  color: #333;
+  z-index: 99999;
+}
+
+/* Override bootstrap */
+.container {
+  max-width: 1400px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.footer {
+  padding: 20px 0 0 0;
+  font-size: 14px;
+  min-height: 150px;
+  color: #fff;
+  background: #333;
+}
+
+.powermail__container {
+  h2 {
+    color: #000 !important;
+  }
+  &:before,
+  &:after {
+    border-bottom: 2px solid #000 !important;
+  }
+}
