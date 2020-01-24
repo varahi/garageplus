@@ -47,6 +47,24 @@ $under-footer-color: #000;
 @font-face{font-family:'DaimlerCSArab-Regular';font-display:swap;src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/EOT/DaimlerCSArab-Regular.eot");src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/EOT/DaimlerCSArab-Regular.eot?#iefix") format("embedded-opentype"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF2/DaimlerCSArab-Regular.woff2") format("woff2"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF/DaimlerCSArab-Regular.woff") format("woff"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/TTF/DaimlerCSArab-Regular.ttf") format("truetype"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/SVG/DaimlerCSArab-Regular.svg#DaimlerCS-Regular") format("svg")}
 @font-face{font-family:'DaimlerCSArab-Demi';font-display:swap;src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/EOT/DaimlerCSArab-Demi.eot");src:url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/EOT/DaimlerCSArab-Demi.eot?#iefix") format("embedded-opentype"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF2/DaimlerCSArab-Demi.woff2") format("woff2"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/WOFF/DaimlerCSArab-Demi.woff") format("woff"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/TTF/DaimlerCSArab-Demi.ttf") format("truetype"),url("https://assets.oneweb.mercedes-benz.com/global/1.19.1/fonts/SVG/DaimlerCSArab-Demi.svg#DaimlerCS-Demi") format("svg")}
 
+/* Override bootstrap */
+
+.container {
+  max-width: 1400px;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+
+  /*
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  */
+}
+
+
 /* Body */
 body {
   @extend %gradient1;
@@ -313,6 +331,10 @@ table th {
   }
 }
 
+.footer-content {
+  padding: 20px !important;
+}
+
 
 /* Parallax */
 .parallax-window {
@@ -328,6 +350,37 @@ table th {
     font-size: 1rem !important;
   }
 }
+
+.footer {
+  padding: 20px 0 0 0;
+  font-size: 14px;
+  min-height: 150px;
+  color: #fff;
+  background: #333;
+
+  &__address {
+    .font-big {
+      text-align: center;
+    }
+    .fa {
+      color: #696969 !important;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+/*
+.powermail__container {
+  h2 {
+    color: #000 !important;
+  }
+  &:before,
+  &:after {
+    border-bottom: 2px solid $link_color !important;
+  }
+}
+*/
+
 
 /* Pace */
 .pace {
@@ -421,51 +474,3 @@ table th {
   color: #333;
   z-index: 99999;
 }
-
-/* Override bootstrap */
-
-.container {
-  max-width: 1400px;
-
-  padding-right: 0px;
-  padding-left: 0px;
-  margin-right: auto;
-  margin-left: auto;
-
-  /*
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  */
-}
-
-.footer {
-  padding: 20px 0 0 0;
-  font-size: 14px;
-  min-height: 150px;
-  color: #fff;
-  background: #333;
-
-  &__address {
-    .font-big {
-      text-align: center;
-    }
-    .fa {
-      color: #696969 !important;
-      padding-bottom: 10px;
-    }
-  }
-}
-
-/*
-.powermail__container {
-  h2 {
-    color: #000 !important;
-  }
-  &:before,
-  &:after {
-    border-bottom: 2px solid $link_color !important;
-  }
-}
-*/
