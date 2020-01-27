@@ -140,6 +140,25 @@ body {
   width: 337px;
 }
 
+.header .logo-customer img {
+  width: 330px;
+  margin-top: -30px;
+  float: right;
+}
+
+.header a {
+  color: #000;
+}
+
+.header .second-row {
+  font-family: "MBCorpoSTitle-Regular-Web", "DaimlerCS-Regular", Helvetica,Arial, sans-serif;
+  font-size: 19px;
+}
+
+.header .second-row .phone {
+  padding-top: 10px;
+}
+
 /* Navigation */
 .navbar {
   font-size: 15px;
@@ -559,4 +578,8 @@ table th {
   display: none;
   color: #333;
   z-index: 99999;
+}
+
+.parallax-window {
+  background: rgba(192, 182, 125, 0.2);
 }
